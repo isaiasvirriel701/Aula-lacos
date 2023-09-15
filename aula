@@ -1,0 +1,115 @@
+// isaias virriel
+console.log(0);
+console.log(1);
+console.log(2);
+console.log(3);
+console.log(4);
+console.log(5);
+*/
+/*
+while(condicao) {
+  //enquanto a condicao for verdadeira 
+  //as linhas de codigo dentro deste bloco
+  //serão executadas
+
+  //assim que a condicao ficar falsa 
+  //o LOOP/laço vai parar 
+} */
+/*/
+let i = 0 
+while (1 < 10) {
+  console.log(i)
+  i++
+} */
+/*
+let estomago = 0;
+
+while (estomago < 100) {
+  console.log("quero comer mais coxinhas");
+  estomago = estomago + 10;
+} */
+/*
+let numeros = [];
+let numero = Number(prompt("digite um numero")); */
+/*
+for(let i = 0; i < 10; i++)  {
+  console.log(i)
+} */
+/*
+let numeros = [1,2,3,4,5,6,7,8]
+for (let i = 0; i < numeros.length; i++) {
+  const elemento = numeros[i];
+  console.log(elemento);
+} */
+/*
+function acharNumeroMaior(arr) {
+  let maior = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > maior) {
+      maior = arr[i];
+    }
+  }
+  return "o maior numero e " + maior
+}
+const numeros = [11, 15, 18, 14, 90, 13];
+const resultado = acharNumeroMaior(numeros);
+console.log(resultado);
+*/
+/*
+const numeros = [14, 67, 89, 15, 23]
+
+for (let numero of numeros){
+  console.log(numero)
+}
+Array.forEach(elemento => {
+  console.log(elemento);
+});*/
+/*
+let exibirPalabra = ["a", "b", "c", "d", "e"];
+function retornaFraseCompleta(arrayDePalavras){
+  let frase = " ";
+  for (let i = 0; i < arrayDePalavras.length; i++) {
+    const elemento = arrayDePalavras[i];
+    frase = frase + " " + elemento; 
+  }
+  return frase;
+}
+console.log(retornaFraseCompleta(palavras));
+*/
+
+//Exercicios de interpretaçao de codigo
+/* 
+1) ele declara uma variavel chamada "valor" e a inicializacom o valor 0
+em seguida ela entra em um loop "for" que ira repetir enquanto a variavel "i" 
+for menor que 5 dentro do loop ele adiciona o valor usando a operaçao (+=)
+o loop incrementa a variavel "i" a cada repetiçao,quando o loop termina o codigo
+imprime o valor final da variavel "valor" no console
+
+O resultado impresso no console e "10" porque o loop soma valores de 0,1,2,3,4 a 
+variavel valor resultando em 10
+
+2) vai ser impresso no console todos os numeros da lista que sao maiores que 18 por isso 
+os numeros impressos serao 19,21,23,25,27,30 
+
+o "for of" e otimo para repetir diretamente pelos elementos de uma lista mas nao fornece 
+o indice diretame para acessar tanto o indice quanto o elemento voce pode usar a funçao 
+"forEach" ou um "for" regular.
+
+3)se o usuario digitasse o numero 4 quando solicitado pela quantidade de linhas,o codigo que
+voce forneceu iria imprimir uma serie de linhas com asteriscos,ondecada linha teria um numero 
+crescente de asteriscoscomeçando com uma linha vazia e indo ate 4 asteriscos.*/
+
+//exercicios de escrita de codigo
+/*
+const quantidadeDeAnimais = Number(prompt("quantos bichinhos de estimaçao voce tem?"));
+const nomeDosAnimais = [];
+
+if (quantidadeDeAnimais === 0) {
+  console.log("que pena! voce pode adotar um pet!");
+} else if (quantidadeDeAnimais > 0) {
+  for (let i = 0; i <quantidadeDeAnimais; i++) {
+    const nome = prompt('digite o nome do seu bichinho:');
+    nomesDosAnimais.push(nome);
+  }
+  console.log("nomes dos seus bichinhos de estimaçao:");
+  console.log(nomeDosAnimais);
